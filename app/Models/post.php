@@ -36,6 +36,6 @@ class Post
         if (! $post) {
             abort(404);
         }
-        return $post;
+        return $post
     }
 }
