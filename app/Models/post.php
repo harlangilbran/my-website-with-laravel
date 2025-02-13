@@ -7,4 +7,5 @@ use Illuminate\Support\Arr;
 
 class Post extends Model 
 {
+     protected $primaryKey = 'post_id';
 }
