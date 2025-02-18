@@ -10,7 +10,7 @@ class Post extends Model
     use HasFactory;
     protected $fillable = ['title', 'author', 'slug', 'body'];
 
-    protected $with = ['author', 'category'];
+    protected $with = ['author', 'category']; //N + 1 untuk mengecilka query
 
     public function author(): BelongsTo
     {
