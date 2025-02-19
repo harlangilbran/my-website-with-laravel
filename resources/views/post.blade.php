@@ -16,7 +16,6 @@
 
   <!-- 
 Install the "flowbite-typography" NPM package to apply styles and format the article content: 
-
 URL: https://flowbite.com/docs/components/typography/ 
 -->
 
