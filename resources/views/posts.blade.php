@@ -1,12 +1,13 @@
 <x-layout>
   <x-slot:title>{{ $title }}</x-slot:title>
-  
+
 <div class="py-4 px-4 mx-auto max-w-screen-xl lg:px-6">
       <div class="mx-auto max-w-screen-md sm:text-center">
           <form>
             @if (request('category'))
             <input type="hidden" name="category" value="{{ request('category') }}">
             @endif
+              
             @if (request('author'))
             <input type="hidden" name="author" value="{{ request('author') }}">
             @endif
@@ -28,7 +29,7 @@
           </form>
       </div>
   </div>
-
+    
   <div class="py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-0">
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
