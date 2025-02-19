@@ -66,6 +66,5 @@
           <a href="/posts" class="block text-blue-600 hover:underline">&laquo; Back to all Article</a></div>
       @endforelse
     </div>   
-    
   </div>
 </x-layout>
