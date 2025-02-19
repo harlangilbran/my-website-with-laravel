@@ -1,12 +1,13 @@
 <x-layout>
   <x-slot:title>{{ $title }}</x-slot:title>
-  
+
 <div class="py-4 px-4 mx-auto max-w-screen-xl lg:px-6">
       <div class="mx-auto max-w-screen-md sm:text-center">
           <form>
             @if (request('category'))
             <input type="hidden" name="category" value="{{ request('category') }}">
             @endif
+              
             @if (request('author'))
             <input type="hidden" name="author" value="{{ request('author') }}">
             @endif
@@ -28,10 +29,14 @@
           </form>
       </div>
   </div>
+<<<<<<< HEAD
   {{-- pagination --}}
   {{ $posts->links() }}
   {{-- pagination end --}}
   <div class="my-4 py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-0">
+=======
+  <div class="py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-0">
+>>>>>>> 73222717f29566a52ef36ead034545c854528f9f
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
   @forelse ($posts as $post)
@@ -61,7 +66,8 @@
                       <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                   </a>
               </div>
-          </article>             
+          </article>   
+          
       @empty
       <div>
           <p class="font-semibold text-xl my-4">Article not Found!</p>
@@ -69,6 +75,10 @@
       @endforelse
     </div>   
   </div>
+<<<<<<< HEAD
   {{-- pagination --}}
   {{ $posts->links() }}
 </x-layout>
+=======
+</x-layout>
+>>>>>>> 73222717f29566a52ef36ead034545c854528f9f
