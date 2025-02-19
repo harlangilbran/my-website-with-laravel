@@ -28,8 +28,10 @@
           </form>
       </div>
   </div>
-
-  <div class="py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-0">
+  {{-- pagination --}}
+  {{ $posts->links() }}
+  {{-- pagination end --}}
+  <div class="my-4 py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-0">
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
   @forelse ($posts as $post)
@@ -66,6 +68,7 @@
           <a href="/posts" class="block text-blue-600 hover:underline">&laquo; Back to all Article</a></div>
       @endforelse
     </div>   
-    
   </div>
+  {{-- pagination --}}
+  {{ $posts->links() }}
 </x-layout>
